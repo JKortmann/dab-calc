@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-color: #fafafa; }
+  body .index-content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    body .index-content .content {
+      text-align: center;
+      text-align: -webkit-center; }
+      body .index-content .content h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 44px;
+        font-weight: 700;
+        color: #39393A;
+        margin: 0 0 24px 0;
+        width: max-content; }
+      body .index-content .content a {
+        text-decoration: none;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 700;
+        color: #39393A;
+        border: 2px solid #39393A;
+        padding: 12px 22px;
+        transition: 0.2s;
+        display: block;
+        width: max-content;
+        animation: ctaBtn 2s ease-in-out infinite; }
+        body .index-content .content a:hover {
+          background-color: #39393A;
+          color: #fafafa; }
+  body #calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    width: 415px;
+    font-size: 24px; }
+    body #calculator button {
+      font-size: inherit;
+      border-radius: 5px;
+      border: none;
+      transition: 0.07s ease-in-out; }
+      body #calculator button:active {
+        outline: none;
+        background-color: #39393A;
+        color: #fafafa; }
+      body #calculator button:hover {
+        cursor: pointer; }
+      body #calculator button:focus {
+        outline: none; }
+    body #calculator .calc-content-block {
+      height: 100px;
+      width: 100%;
+      background-color: rgba(57, 57, 58, 0.2); }
+      body #calculator .calc-content-block.input {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        border: 0;
+        font-size: inherit;
+        border-radius: 5px; }
+        body #calculator .calc-content-block.input:focus {
+          outline: none; }
+      body #calculator .calc-content-block.zero {
+        grid-column-start: 1;
+        grid-column-end: 3; }
+      body #calculator .calc-content-block.equals {
+        grid-column-start: 1;
+        grid-column-end: 5; }
+
+@keyframes ctaBtn {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-2px);
+    box-shadow: 0 1px 1px 1px rgba(57, 57, 58, 0.2); }
+  100% {
+    transform: translateY(0); } }
+
+/*# sourceMappingURL=main.css.map */
